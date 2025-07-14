@@ -1,0 +1,139 @@
+        <!-- index.html -->
+    <!DOCTYPE html>
+    <html lang="ko">
+    <head>
+    <meta charset="UTF-8" /> 
+    <!--문자 깨짐 방지-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--반응형 웹을 위한 모바일 뷰포트 크기 설정-->
+    <title>김유정의 홈페이지</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+
+    <header>
+        <nav class="flex items-center justify-between p-4 bg-gray-800 text-white">
+        <img src="https://via.placeholder.com/100x50" alt="로고" />
+        <ul class="flex gap-4">
+        <li><a href="index.html" class="hover:text-blue-400">Home</a></li>
+        <li><a href="portfolio.html" class="hover:text-blue-400">Portfolio</a></li>
+    </ul>
+    </nav>
+    </header>
+
+        <section id="hero" class="bg-cover bg-center text-black p-12" style="background-image: url('https://via.placeholder.com/1200x400')">
+        <h1 class="text-4xl font-bold">안녕하세요!</h1>
+        <p class="mt-4 text-lg">저의 페이지에 방문해주셔서 감사합니다.</p>
+        </section>
+
+    <section id="info" class="flex flex-col items-center p-8">
+        <img src="potato.jpeg" alt="내 이미지" />
+    <p class="text-center max-w-xl">저는 백엔드 개발자입니다. 사용자 경험과 퍼포먼스를 중요하게 생각합니다.</p>
+    </section>
+
+    <!-- <section id="skills">
+    <h2>사용 기술</h2>
+        <div>
+        <h3>HTML</h3>
+        <p>웹 문서의 구조를 설계합니다.</p>
+        </div>
+        <div>
+        <h3>CSS</h3>
+        <p>디자인을 입힙니다.</p>
+        </div>
+        <div>
+        <h3>Java</h3>
+        <p>웹 백엔드 개발이나 안드로이드 앱 개발에 활용됩니다.</p>
+        </div>
+    </section>
+ -->
+
+
+    <section id="skills" class="grid grid-cols-2 md:grid-cols-3 gap-6 p-8">
+    <div class="p-4 border rounded shadow text-center">
+        <h3 class="font-semibold">HTML</h3>
+        <p>웹 문서의 구조</p>
+    </div>
+    <div class="p-4 border rounded shadow text-center">
+        <h3 class="font-semibold">CSS</h3>
+        <p>디자인</p>
+    </div>
+    <div class="p-4 border rounded shadow text-center">
+        <h3 class="font-semibold">JavaScript</h3>
+        <p>인터랙션</p>
+    </div>
+    <div class="p-4 border rounded shadow text-center">
+        <h3 class="font-semibold">React</h3>
+        <p>컴포넌트</p>
+    </div>
+    <div class="p-4 border rounded shadow text-center">
+        <h3 class="font-semibold">Node.js</h3>
+        <p>백엔드</p>
+    </div>
+    </section>
+
+
+
+
+    <!-- <section id="tools">
+        <h2>사용 툴</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>툴 이름</th>
+                <th>설명</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>VSCode</td>
+                <td>마이크로소프트의 코드 에디터</td>
+            </tr>
+            <tr>
+                <td>Git & GitHub</td>
+                <td>버전관리 및 코드 저장소</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+ -->
+
+    <section id="tools" class="p-8">
+  <h2 class="text-xl font-bold mb-4">사용 툴</h2>
+  <table class="table-auto w-full border border-gray-300">
+    <thead>
+      <tr class="bg-gray-100">
+        <th class="border px-4 py-2 text-left">툴 이름</th>
+        <th class="border px-4 py-2 text-left">설명</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="border px-4 py-2">VSCode</td>
+        <td class="border px-4 py-2">마이크로소프트의 코드 에디터</td>
+      </tr>
+      <tr>
+        <td class="border px-4 py-2">Git & GitHub</td>
+        <td class="border px-4 py-2">버전관리 및 코드 저장소</td>
+      </tr>
+      <tr>
+        <td class="border px-4 py-2">Figma</td>
+        <td class="border px-4 py-2">디자인 및 UI/UX 협업 도구</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+    <!-- <footer>
+        <p>이메일: kimyujeong1204@gmail.com</p>
+        <small>© 2025 나의 포트폴리오</small>
+    </footer>
+ -->
+
+
+<footer class="bg-gray-900 text-white text-center p-4">
+  <p>이메일: me@example.com</p>
+  <small>© 2025 나의 포트폴리오</small>
+</footer>
+    </body>
+    </html>
