@@ -26,6 +26,35 @@
             }
         }
     </script>
+    <style>
+    @keyframes fadeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* 공통 애니메이션 클래스 */
+  .fadeUp {
+    opacity: 0; /* 초기 상태 */
+    animation-name: fadeUp;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards; /* 애니메이션 끝난 상태 유지 */
+    animation-timing-function: ease-out;
+  }
+
+  /* 각각의 아이템에 다른 딜레이 부여 */
+  .delay-0 {  animation-delay: 0s; }
+  .delay-1 { animation-delay: 1s; }
+  .delay-2 {animation-delay: 2s;}
+  .delay-3 {  animation-delay: 3s; }
+  .delay-4 { animation-delay: 4s; }
+  .delay-5 {animation-delay: 5s;}
+</style>
 </head>
 
 <body>
@@ -41,32 +70,28 @@
     </header>
 
     <main>
-        <section>
-            <h2>참여 프로젝트</h2>
-            <article>
-                <h3>프로젝트 A</h3>
-                <p>설명 및 역할</p>
-            </article>
-            <article>
-                <h3>프로젝트 B</h3>
-                <p>설명 및 역할</p>
-            </article>
-        </section>
-        <!-- <section class="grid grid-cols-1 md:grid-cols-3 gap-6 p-8">
-            <div class="p-4 border rouunded shadow text center">
-                <h3 class="font-semibold"> 참여프로젝트 </h3>
-                <p> 역할 </p>
+        <section id="info" class="p-8">
+            <p class="font-bold text-3xl mb-5 animate-fadein">부감이를 소개해요!</p>
+            <div class="flex border-yellow-400 bg-yellow-100 rounded shadow items-center p-8 gap-4">
+                <img src="images/potato.jpeg" alt="별에감자" class="fadeUp delay-0 rounded-full max-w-56 h-auto">
+                    <ul class=" space-y-3 text-lg">
+                    <li class="fadeUp delay-1">저는 부실해요</li>
+                    <li class="fadeUp delay-2">또 게을러요</li>
+                    <li class="fadeUp delay-3">하지만 귀엽죠?</li>
+                </ul>
             </div>
-            <div class="p-4 border rouunded shadow text center">
-                <h3 class="font-semibold"> 참여프로젝트 </h3>
-                <p> 역할 </p>
-            </div> -->
+        </section>
+    <section id="map" calass="p-8">
+            <h2 class="flex justify-center text-3xl font-bold mb-4 p-8 ">부감이의 고향</h2>
+            <div class="bh-whit border rounded-full shadow-lg w-full max-w-2xl mx-auto overflow-hidden ">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320700.5983288377!2d124.97895604457912!3d35.63088984490056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568cf463a71545d%3A0x19500c8bb9669391!2z6rCQ7J6Q64aN7J6l!5e0!3m2!1sko!2skr!4v1752567903871!5m2!1sko!2skr"
+        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </section>
     </main>
 
-    <footer>
-        <p>이메일: me@example.com</p>
-        <small>© 2025 나의 포트폴리오</small>
-    </footer>
-</body>
+    </body>
 
 </html>
