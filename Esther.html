@@ -24,7 +24,33 @@
                 }
             }
         }
+        
     </script>
+    <style>
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fadeInUp {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    will-change: transform, opacity;
+  }
+
+  .delay-0 { animation-delay: 0s; }
+  .delay-1 { animation-delay: 0.6s; }
+  .delay-2 { animation-delay: 1.2s; }
+  .delay-3 { animation-delay: 1.8s; }
+  .delay-4 { animation-delay: 2.4s; }
+</style>
+
 </head>
 
 <body>
@@ -40,28 +66,44 @@
 </nav> 
   </header>
 
-  <main>
+  <body class="bg-gray-50 font-sans text-gray-800">
 
-    <section id="hero" class="bg-cover bg-center text-primary p-30">
-  <h1 class="text-4xl font-bold">참여 프로젝트</h1>
-  <p class="mt-4 text-lg">짜잔~</p>
-</section>
+  <main class="max-w-xl mx-auto p-6 space-y-12">
 
-    <section>
-        <h3>프로젝트 A</h3>
-        <p>설명 및 역할</p>
-      </article>
-      <article>
-        <h3>프로젝트 B</h3>
-        <p>설명 및 역할</p>
-      </article>
-    </section>
+    <!-- 사진 -->
+    <img src="images/IMG_0493.jpeg" alt="농담곰"
+      class="w-48 h-48 rounded-full mx-auto fadeInUp delay-0" />
+
+    <!-- 소개글 -->
+    <div class="text-center text-lg space-y-4">
+  <p class="fadeInUp delay-0">안녕하세요! 농담곰을 보러 오신 여러분 반갑습니다! 😊</p>
+  <p class="fadeInUp delay-1">농담곰은 귀엽습니다!</p>
+  <p class="fadeInUp delay-2">농담곰은 하얗습니다!</p>
+  <p class="fadeInUp delay-3">농담곰은 동그랗습니다!</p>
+</div>
+
+
+
+    <!-- 유튜브 영상 -->
+    <div class="relative pb-[56.25%] h-0 fadeInUp delay-4 rounded-lg shadow-lg overflow-hidden">
+      <iframe
+        class="absolute top-0 left-0 w-full h-full"
+        src="https://www.youtube.com/embed/oi0QAcz1tE4"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+
   </main>
 
-  <footer>
-    <p>이메일: me@example.com</p>
-    <small>© 2025 나의 포트폴리오</small>
-  </footer>
-</body>
-</html>
-```
+
+  <!--footer class="fixed bottom-0 w-full bg-white-0 text-black text-center p-4"-->
+    <footer class="bg-white text-black text-center p-4 shadow-inner">
+
+  <p>email: bugam@joke.com</p>
+  <small>© 2025 부실한 농담 </small>
+</footer>
+    </body>
+    </html>
+
