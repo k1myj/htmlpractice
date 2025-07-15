@@ -2,22 +2,39 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <title>나의 포트폴리오</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+KR&display=swap" rel="stylesheet">
-
-  
+    <meta charset="UTF-8" />
+    <title>나의 포트폴리오</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1E3A8A',   // 딥 블루
+                        secondary: '#F59E0B', // 앰버
+                        accent: '#10B981',    // 그린
+                        muted: '#E5E7EB',     // 그레이
+                    },
+                    fontFamily: {
+                        bitcount: ['"Bitcount Grid Double"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
 </head>
+
 <body>
   <header>
     <nav class="flex items-center justify-between p-4 bg-gray-800 text-white">
-  <img src="images/IMG_0493.jpeg" alt="로고" width="100" class="rounded-full" alt="image" />
-  <ul class="flex gap-4">
+  <img src="images/TalkMedia_i_az07vm.jpg.jpg" alt="로고" width="100" class="rounded-full" alt="image" />
+  <ul class="flex gap-4 font-bitcount">
     <li><a href="index.html" class="hover:text-blue-400">Home</a></li>
-    <li><a href="portfolio.html" class="hover:text-blue-400">Portfolio</a></li>
-    <li><a href="Esther.html" class="hover:text-blue-400">jokebear's</a></li>
+    <li><a href="portfolio.html" class="hover:text-blue-400">bugam</a></li>
+    <li><a href="Esther.html" class="hover:text-blue-400">jokebear</a></li>
 
   </ul>
 </nav> 

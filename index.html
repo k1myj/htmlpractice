@@ -6,18 +6,38 @@
     <!--문자 깨짐 방지-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--반응형 웹을 위한 모바일 뷰포트 크기 설정-->
-    <title>김유정의 홈페이지</title>
+    <title>부실한 농담곰</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    </head>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1E3A8A',   // 딥 블루
+                        secondary: '#F59E0B', // 앰버
+                        accent: '#10B981',    // 그린
+                        muted: '#E5E7EB',     // 그레이
+                    },
+                    fontFamily: {
+                        bitcount: ['"Bitcount Grid Double"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
     <body>
 
     <header>
         <nav class="flex items-center justify-between p-4 bg-gray-800 text-white">
-        <img src="https://via.placeholder.com/100x50" alt="로고" />
-        <ul class="flex gap-4">
+        <img src="images/TalkMedia_i_az07vm.jpg.jpg" width="100" class="rounded-full" alt="image" />
+        <ul class="flex gap-4 font-bitcount">
         <li><a href="index.html" class="hover:text-blue-400">Home</a></li>
-        <li><a href="portfolio.html" class="hover:text-blue-400">Portfolio1</a></li>
-        <li><a href="Esther.html" class="hover:text-blue-400">Portfolio2</a></li>
+        <li><a href="portfolio.html" class="hover:text-blue-400">bugam</a></li>
+        <li><a href="Esther.html" class="hover:text-blue-400">jokebear</a></li>
         
     </ul>
     </nav>
